@@ -1,11 +1,27 @@
-.skillset__card {
+.skillset__left {
   background-color: #350048;
+  display: flex;
+}
+
+.skillset__card {
   position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 250px;
   text-align: center;
-  z-index: 10;
   margin: 20px 20px 60px;
+}
+
+.skillset__card::before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 50px;
+  background-color: #bd00ff;
 }
 
 .skillset__card__box {
@@ -14,4 +30,109 @@
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 100px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  border-radius: 10px;
+}
+.skillset__box__percentage {
+  position: relative;
+  top: 9px;
+  left: 4px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+.skillset__box__number {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.skillset__box__percentage svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.skillset__box__percentage svg circle {
+  fill: none;
+  stroke-width: 10;
+  stroke: rgba(225, 225, 225, 0.05);
+  transform: translate(5px, 5px);
+}
+
+.skillset__box__percentage svg circle:nth-child(2) {
+  stroke: #ff0461;
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
+  stroke-linecap: round;
+}
+
+.skillset__card:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 90) / 100);
+}
+
+.skillset__card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 89) / 100);
+  stroke: #2bd2ff;
+}
+
+.skillset__card:nth-child(4) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 79) / 100);
+  stroke: #ffcdd2;
+}
+
+.skillset__text {
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+  padding: 30px 20px 10px;
+  background-color: #f00;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 1;
+  transition: transform 0.5s, z-index 0s, bottom 0.5s, padding 0.5s;
+  transition-delay: 0.5s, 1s, 0s, 1s;
+  color: #fff;
+}
+
+.skillset__card:hover .skillset__text {
+  transition-delay: 0.5s, 0.5s, 0s, 0.5s;
+  bottom: -70px;
+  z-index: 11;
+  transform: translateY(-80px);
+  padding: 10px 20px;
+}
+
+.skillset__card:nth-child(2) .skillset__text {
+  background: #ff0461;
+}
+
+.skillset__card:nth-child(3) .skillset__text {
+  background: #2bd2ff;
+}
+
+.skillset__card:nth-child(4) .skillset__text {
+  background: #ffcdd2;
 }
