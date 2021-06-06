@@ -1,0 +1,33 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu a,
+.navbar__logo {
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease-out;
+}
+
+.navbar__menu a:hover,
+.navbar__logo:hover,
+.navbar__menu a:focus {
+  background-color: var(--color-dark-blue);
+}
+
+.navbar__menu__item {
+  margin: 0 8px;
+  font-weight: 700;
+  cursor: pointer;
+}

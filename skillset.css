@@ -1,6 +1,12 @@
 .skillset__left {
   background-color: var(--color-dark-purple);
   display: flex;
+  flex-direction: column;
+}
+
+.skillset__cards {
+  display: flex;
+  justify-content: center;
 }
 
 .skillset__card {
@@ -18,7 +24,7 @@
 .skillset__card::before {
   content: '';
   position: absolute;
-  top: 45%;
+  top: 43%;
   width: 100%;
   height: 50px;
   background-color: var(--color-light-purple);
@@ -84,18 +90,28 @@
   stroke-linecap: round;
 }
 
-.skillset__card:nth-child(2) svg circle:nth-child(2) {
+.skillset__card:nth-child(1) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440px - (440px * 90) / 100);
 }
 
-.skillset__card:nth-child(3) svg circle:nth-child(2) {
+.skillset__card:nth-child(2) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440px - (440px * 89) / 100);
   stroke: var(--color-blue);
 }
 
-.skillset__card:nth-child(4) svg circle:nth-child(2) {
+.skillset__card:nth-child(3) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440px - (440px * 79) / 100);
   stroke: var(--color-light-pink);
+}
+
+.skillset__title {
+  display: flex;
+  justify-content: center;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-white);
 }
 
 .skillset__text {
@@ -110,7 +126,6 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  pointer-events: none;
   z-index: 1;
   transition: transform 0.5s, z-index 0s, bottom 0.5s, padding 0.5s;
   transition-delay: 0.5s, 1s, 0s, 1s;
@@ -125,14 +140,14 @@
   padding: 10px 20px;
 }
 
-.skillset__card:nth-child(2) .skillset__text {
+.skillset__card:nth-child(1) .skillset__text {
   background: var(--color-red);
 }
 
-.skillset__card:nth-child(3) .skillset__text {
+.skillset__card:nth-child(2) .skillset__text {
   background: var(--color-blue);
 }
 
-.skillset__card:nth-child(4) .skillset__text {
+.skillset__card:nth-child(3) .skillset__text {
   background: var(--color-light-pink);
 }

@@ -1,5 +1,8 @@
 @import 'reset.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import 'navbar.css';
 @import 'skillset.css';
 
 :root {
@@ -14,6 +17,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #2bd2ff;
+  --color-dark-blue: #0c4a66;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -33,6 +37,9 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  /* Size */
+  --border-radius: 8px;
 }
 
 * {
@@ -44,6 +51,12 @@ h1 {
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: 16px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 700;
 }
 
 h2 {
@@ -69,4 +82,6 @@ p {
 
 body {
   background-color: var(--color-light-white);
+  font-family: 'Open Sans', sans-serif;
+  cursor: default;
 }
