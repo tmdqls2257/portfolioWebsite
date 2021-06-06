@@ -85,22 +85,22 @@
 
 .skillset__box__percentage svg circle:nth-child(2) {
   stroke: var(--color-hotpink);
-  stroke-dasharray: 440px;
-  stroke-dashoffset: 440px;
+  stroke-dasharray: 350px;
+  stroke-dashoffset: 350px;
   stroke-linecap: round;
 }
 
 .skillset__card:nth-child(1) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440px - (440px * 90) / 100);
+  stroke-dashoffset: calc(350px - (350px * 90) / 100);
 }
 
 .skillset__card:nth-child(2) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440px - (440px * 89) / 100);
+  stroke-dashoffset: calc(350px - (350px * 79) / 100);
   stroke: var(--color-blue);
 }
 
 .skillset__card:nth-child(3) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440px - (440px * 79) / 100);
+  stroke-dashoffset: calc(350px - (350px * 69) / 100);
   stroke: var(--color-light-pink);
 }
 
