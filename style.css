@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 @import 'navbar.css';
+@import 'home.css';
+@import 'img.css';
+@import 'about.css';
 @import 'skillset.css';
 
 :root {
@@ -83,5 +86,6 @@ p {
 body {
   background-color: var(--color-light-white);
   font-family: 'Open Sans', sans-serif;
+  height: 100vh;
   cursor: default;
 }
