@@ -108,7 +108,6 @@
   display: flex;
   justify-content: center;
   font-weight: var(--weight-bold);
-  font-size: var(--font-regular);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-white);

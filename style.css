@@ -84,8 +84,15 @@ p {
 }
 
 body {
-  background-color: var(--color-light-white);
+  background-color: var(--color-dark-blue);
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   cursor: default;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
 }
