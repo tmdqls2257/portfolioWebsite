@@ -106,3 +106,13 @@ body {
 .section__container {
   max-width: 1200px;
 }
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-light-pink);
+}
