@@ -23,7 +23,7 @@
 .navbar__menu a:hover,
 .navbar__logo:hover,
 .navbar__menu a:focus {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-light-pink);
 }
 
 .navbar__menu__item {
