@@ -116,3 +116,60 @@ body {
   transform: scale(1.1);
   color: var(--color-light-pink);
 }
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 6px;
+  right: 32px;
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  display: none;
+  /* opacity를 이용하게 되면 불투명도만 0이 되고 요소는 존재 하기 때문에 */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__menu__item {
+    margin: 10px;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .background:not(.water) {
+    display: none;
+  }
+}

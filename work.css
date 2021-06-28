@@ -32,7 +32,7 @@
   top: -20px;
   left: 4px;
   opacity: 0;
-  transition: all var(--animation-duration) ease;
+  transition: all var(--animation-shorts-duration) ease;
 }
 .work__projects {
   display: flex;
