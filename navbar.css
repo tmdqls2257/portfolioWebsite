@@ -1,8 +1,17 @@
 #navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--color-white);
+  background-color: transparent;
+  transition: all var(--animation-shorts-duration) ease-in-out;
+}
+
+#navbar.navbar--blue {
+  background-color: var(--color-blue);
 }
 
 .navbar__logo {
