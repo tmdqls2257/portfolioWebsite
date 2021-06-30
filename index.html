@@ -20,12 +20,11 @@
       <a href="#">Bin</a>
     </div>
     <ul class="navbar__menu">
-      <li class="navbar__menu__item"><a href="#">Home</a></li>
-      <li class="navbar__menu__item"><a href="#">About</a></li>
-      <li class="navbar__menu__item"><a href="#">Skills</a></li>
-      <li class="navbar__menu__item"><a href="#">My work</a></li>
-      <li class="navbar__menu__item"><a href="#">Testimonial</a></li>
-      <li class="navbar__menu__item"><a href="#">Contact</a></li>
+      <li class="navbar__menu__item" data-link="#Home">Home</a></li>
+      <li class="navbar__menu__item" data-link="#about">About</a></li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</a></li>
+      <li class="navbar__menu__item" data-link="#work">My work</a></li>
+      <li class="navbar__menu__item" data-link="#contact">Contact</a></li>
     </ul>
 
     <!-- Toggle button -->
@@ -35,11 +34,11 @@
   </nav>
 
   <!-- Home -->
-  <header id="Home">
+  <section id="Home">
     <div class="home__box">
       <h1 class="home__title">Wellcom, <br />My Firstt Website</h1>
       <h2 class="home__description">Jeonbuk National University Student</h2>
-      <button class="home__contact">Contact Me</button>
+      <button class="home__contact" data-link="#contact">Contact Me</button>
     </div>
     <section id="img">
       <img src="img/projects/drive-download-20210606T064655Z-001/bird1.png" alt="bird1" class="background bird1">
@@ -48,7 +47,7 @@
       <img src="img/projects/drive-download-20210606T064655Z-001/rocks.png" alt="rocks" class="background rocks">
       <img src="img/projects/drive-download-20210606T064655Z-001/water.png" alt="water" class="background water">
     </section>
-  </header>
+  </section>
   
 
   <!-- About -->
