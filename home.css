@@ -46,3 +46,23 @@
   height: 100%;
   pointer-events: none;
 }
+.home__arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 13;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-light-pink);
+  font-size: 30px;
+  color: var(--color-blue);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-shorts-duration) ease-in;
+}
+
+.home__arrow.visable {
+  opacity: 1;
+  pointer-events: auto;
+}
