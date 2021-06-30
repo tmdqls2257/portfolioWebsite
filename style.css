@@ -156,8 +156,9 @@ body {
     margin-bottom: 38px;
   }
 
-  .skillset {
+  .skillset__cards {
     flex-direction: column;
+    margin: auto;
   }
 
   .project {
